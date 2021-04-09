@@ -12,6 +12,9 @@ tkinterRoot.config(bg='black')
 # variables
 selectedAlgorithm = StringVar()
 
+def Generate():
+    print('Algorithm Selected: '+ selectedAlgorithm.get())
+
 # base layout of grey and white area
 # frame is used to organize layout
 user_frame = Frame(tkinterRoot, width=600, height=200, bg='grey')
@@ -27,6 +30,13 @@ user_canvas.grid(row=1, column=0, padx=10, pady=5)
 Label(user_frame, text="Algorithm: ", bg='grey').grid(row=0, column=0, padx=5, pady=5, sticky=W)
 visualizerMenu = ttk.Combobox(user_frame, textvariable=selectedAlgorithm, values=['Bubble Sort', 'Merge Sort'])
 visualizerMenu.grid(row=0, column=1, padx=5, pady=5)
+visualizerMenu.current(0) #stays at the first value
+#generate button
+Button(user_frame,text="Generate",command=Generate, bg='green').grid(row=0, column=2, padx=5, pady=5)
+
+
+
+
 
 # runs the tkinter code and compiles it
 tkinterRoot.mainloop()
