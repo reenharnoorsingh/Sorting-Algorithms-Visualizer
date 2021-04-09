@@ -34,7 +34,7 @@ visualizerMenu.current(0) #stays at the first value
 #generate button
 Button(user_frame,text="Generate",command=Generate, bg='green').grid(row=0, column=2, padx=5, pady=5)
 
-
+#Row[1]
 
 
 
