@@ -35,7 +35,7 @@ visualizerMenu.current(0) #stays at the first value
 Button(user_frame,text="Generate",command=Generate, bg='green').grid(row=0, column=2, padx=5, pady=5)
 
 #Row[1]
-
+Label(user_frame, text="Size: ", bg='grey').grid(row=1, column=0, padx=5, pady=5, sticky=W)
 
 
 # runs the tkinter code and compiles it
