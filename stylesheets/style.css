@@ -4,6 +4,7 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: large;
     font-weight: bold;
+    zoom: 95.5%;
     /* text-transform: uppercase; */
   }
   
@@ -80,7 +81,7 @@
     color: white;
     outline: none;
     padding: 5% 0%;
-    font-size: x-large;
+    font-size: large;
   }
   
   nav .header_right .algos button:hover {
